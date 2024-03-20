@@ -16,7 +16,7 @@ const Send=()=>{
     if(!token){
         router('/siginin');
     }
-    const response= await axios.post('https://paytm-topaz.vercel.app/api/v1/account/transfer',{
+    const response= await axios.post('https://paytm-backend-yohj.onrender.com/api/v1/account/transfer',{
         to:id,
         amount:parseInt(amount),
     },{

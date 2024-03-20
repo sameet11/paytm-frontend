@@ -15,7 +15,7 @@ const Users=()=>{
             if(!token){
                 router('/signin');
             }
-            const response=await axios.get(`https://paytm-topaz.vercel.app/api/v1/user/bulk?filter=${filter}`,{
+            const response=await axios.get(`https://paytm-backend-yohj.onrender.com/api/v1/user/bulk?filter=${filter}`,{
                 headers:{
                     authorization:`Bearer ${token}`
                 }

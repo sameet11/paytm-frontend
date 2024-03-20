@@ -10,7 +10,7 @@ const Main=()=>{
             router('/signup')
             return;
         }
-        const response= await axios.get('https://paytm-topaz.vercel.app/api/v1/user/me',{
+        const response= await axios.get('https://paytm-backend-yohj.onrender.com/api/v1/user/me',{
             headers:{
                 authorization:`Bearer ${token}`
             }

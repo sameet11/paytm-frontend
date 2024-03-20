@@ -16,7 +16,7 @@ const Signup=()=>{
     const [password,setpassword]=useState("");
     const router=useNavigate();
     const handleClick=async()=>{
-        const response=await axios.post('https://paytm-topaz.vercel.app/api/v1/user/signup',{
+        const response=await axios.post('https://paytm-backend-yohj.onrender.com/api/v1/user/signup',{
             username: username,
             password: password,
             firstName: firstname,

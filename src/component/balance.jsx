@@ -12,7 +12,7 @@ const Balance=()=>{
             if(!token){
                 router('/signin');
             }
-            const response=await axios.get('https://paytm-topaz.vercel.app/api/v1/account/balance',{
+            const response=await axios.get('https://paytm-backend-yohj.onrender.com/api/v1/account/balance',{
                 headers:{
                     authorization:`Bearer ${token}`
                 }
